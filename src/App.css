@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+/*General*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #000000, #103359);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Transition*/
+
+a, .btn {
+  transition: all 300ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Top-section*/
+
+nav, .nav-links {
+  display: flex;
 }
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+  transition: font-size 300ms ease;
+}
+
+a:hover {
+  color: lightgrey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: lightgrey;
+  font-size: 2.3rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  margin-right: 43vh;
+}
+
+.title:hover {
+  cursor: default;
+}
+
+/*Mid-section*/
+
+#mid-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background: url("Components/assets/mountain.jpg") no-repeat center;
+  background-size: 100% 80%;
+  cursor: default;
+}
+
+.greeting-container {
+  display: flex;
+  color: white;
+  margin: 40vh 20vh 20vh 30vh;
+  width: 100%;
+  height: 100%;
+}
+
+.greeting1 {
+  font-size: 2vw;
+  width: 70vh;
+}
+
+.greeting2 {
+  font-size: 4vw;
+  width: 70vh;
+}
+
+.greeting3 {
+  font-size: 1.5vw;
+  margin-top: 20px;
+  width: 70vh;
+}
+
+.greeting .logo {
+  margin-top: 50px;
+}
+
+.portrait {
+  margin: 5vh 10vh 40vh 30vh;
+}
+
+.picture{
+  width: 20vw;
+  height: 50%;
+  border-radius: 60%;
+}
+
+/*About-me*/
+
+#about-me {
+  display: flex;
+  margin: 50vh 38vh 10vh;
+  position: relative;
+  height: 100vh;
+}
+
+.aboutMe {
+  width: 100%;
+}
+
+.aboutMe .about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2f8dd0;
+  margin-bottom: 2vh;
+}
+
+.about-content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.golf {
+  width: 500px;
+  height: auto;
+}
+
+.intro-container {
+  flex-direction: column;
+}
+
+.aboutMe .introduction {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  background-color: #103359;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.skill-container {
+  font-size: 2rem;
+  color: #2f8dd0;
+  margin: 20px;
+}
+
+.skill-logo{
+  width: 120px;
+  height: 120px;
+  margin: 20px 40px;
+
+}
+
