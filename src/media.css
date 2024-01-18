@@ -1,0 +1,92 @@
+/*Car-animation*/
+
+.jeep-container {
+  position: absolute;
+  top: 630px;
+  left: -10px;
+}
+
+.jeep {
+  width: 18%;
+  height: auto;
+  max-width: 100%;
+  background: url("./Components/assets/jeep.png") no-repeat center/cover;
+  animation: first-half 5s linear forwards;
+}
+
+@keyframes first-half {
+  0% {
+    transform: translateX(-0.2vw) rotate(-7deg);
+  }
+  20% {
+    transform: translate(10vw, -0.8vw) rotate(-7deg);
+  }
+  30% {
+    transform: translate(14vw, -1.5vw) rotate(-8deg);
+  }
+  40% {
+    transform: translate(20vw, -2.2vw) rotate(-13deg);
+  }
+  45% {
+    transform: translate(22vw, -3vw) rotate(-8deg);
+  }
+  60% {
+    transform: translate(29vw, -4vw) rotate(-8deg);
+  }
+  100% {
+    transform: translate(48vw, -6.2vw) rotate(1deg);
+  }
+}
+
+@keyframes second-half {
+  0% {
+    transform: translate(48vw, -6vw) rotate(1deg);
+  }
+  30% {
+    transform: translate(62vw, -4.3vw) rotate(10deg);
+  }
+  50% {
+    transform: translate(72vw, -3.3vw) rotate(10deg);
+  }
+  85% {
+    transform: translate(82vw, -1.3vw) rotate(15deg);
+  }
+  100% {
+    transform: translate(96vw, -0.2vw) rotate(-1deg);
+  }
+}
+
+#hello-message {
+  position: absolute;
+  top: -9vw;
+  left: 50vw;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hello {
+  width: 3vw;
+  height: auto;
+}
+
+/*Snowfall-animation*/
+
+.snow {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  pointer-events: none;
+  background: url("./Components/assets/snowball.png") repeat center/cover;
+  animation: snowfall linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}

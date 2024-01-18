@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #000000, #103359);
+  background: linear-gradient(to bottom, #000000, #103359) no-repeat;
 }
 
 html {
@@ -80,7 +80,7 @@ a:hover {
   cursor: default;
 }
 
-/*Mid-section*/
+/*Introduction*/
 
 #mid-section {
   height: 100vh;
@@ -193,3 +193,43 @@ a:hover {
 
 }
 
+/*Project-section*/
+
+.project-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f8dd0;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
+
+.project-container .title {
+  margin: 2vh 0;
+}
+
+.project-container h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+.projects {
+  text-align: center;
+  display: flex;
+}
+
+.project {
+  margin: 2vh 5vh 10vh 10vh;
+}
+
+.project h2 {
+  color: white;
+  margin-bottom: 2vh;
+  font-size: 3rem;
+}
+
+.project img {
+  width: 50vh;
+  height: 30vh;
+}
