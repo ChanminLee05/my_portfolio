@@ -197,7 +197,6 @@ a:hover {
 
 .project-container {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
   background-color: #2f8dd0;
@@ -232,4 +231,28 @@ a:hover {
 .project img {
   width: 50vh;
   height: 30vh;
+}
+
+/*Contact*/
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+
+.contact-container h2 {
+  color: white;
+  font-size: 3rem;
+  margin: 5vh;
+}
+
+.contact-information {
+  margin-left: 5vh;
+  margin-bottom: 5vh;
+}
+
+.contact-information p {
+  font-size: 2rem;
+  margin: 5px;
 }

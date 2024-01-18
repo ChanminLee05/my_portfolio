@@ -14,6 +14,10 @@
   animation: first-half 5s linear forwards;
 }
 
+.second-half {
+  animation: second-half 5s linear forwards;
+}
+
 @keyframes first-half {
   0% {
     transform: translateX(-0.2vw) rotate(-7deg);
@@ -57,16 +61,16 @@
 }
 
 #hello-message {
+  cursor: pointer;
   position: absolute;
   top: -9vw;
-  left: 50vw;
-  opacity: 0;
-  cursor: pointer;
+  left: 49vw;
 }
 
 .hello {
   width: 3vw;
   height: auto;
+  display: block;
 }
 
 /*Snowfall-animation*/

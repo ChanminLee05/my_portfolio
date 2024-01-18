@@ -1,15 +1,18 @@
 import React from 'react';
-import SnowJeep from "./Snow-Jeep";
+import Jeep from "./Jeep";
 import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import Contact from "./Contact";
+import Snow from "./Snow";
 
 
 export default function Middle() {
     return (
         <div>
             <section id="mid-section">
-                <SnowJeep/>
+                <Snow/>
+                <Jeep/>
                 <Introduction/>
             </section>
             <section id="about-me">
@@ -17,6 +20,9 @@ export default function Middle() {
             </section>
             <section id="projects">
                 <Projects/>
+            </section>
+            <section id="contact">
+                <Contact/>
             </section>
         </div>
     )
