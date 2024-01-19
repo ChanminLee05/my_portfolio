@@ -9,7 +9,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #000000, #103359) no-repeat;
+  background-color: #ecc95c;
+  transition: background-color 300ms ease;
 }
 
 html {
@@ -28,6 +29,10 @@ a, .btn {
 
 /*Top-section*/
 
+#top-section {
+  background: linear-gradient(to bottom, #000000, #0b0b0e);
+}
+
 nav, .nav-links {
   display: flex;
 }
@@ -41,22 +46,22 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5vw;
 }
 
-.nav-links a {
+.nav-links .top-nav {
   color: white;
   text-decoration: none;
   text-decoration-color: white;
   transition: font-size 300ms ease;
 }
 
-a:hover {
+.top-nav:hover {
   color: lightgrey;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: lightgrey;
-  font-size: 2.3rem;
+  font-size: 1.7vw;
 }
 
 .logo-title {
@@ -65,13 +70,13 @@ a:hover {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 2vw;
+  height: 2vw;
   margin-right: 20px;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.7vw;
   color: white;
   margin-right: 43vh;
 }
@@ -88,8 +93,8 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  background: url("Components/assets/mountain.jpg") no-repeat center;
-  background-size: 100% 80%;
+  background: url("Components/assets/mountain.jpg") center no-repeat fixed;
+  background-size: 100% 100%;
   cursor: default;
 }
 
@@ -127,70 +132,215 @@ a:hover {
 
 .picture{
   width: 20vw;
+  max-width: 20vw;
   height: 50%;
   border-radius: 60%;
 }
 
+@media screen and (max-width: 1650px) {
+  .portrait {
+    margin: 0;
+  }
+
+  .picture {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
 /*About-me*/
 
 #about-me {
   display: flex;
-  margin: 50vh 38vh 10vh;
   position: relative;
   height: 100vh;
+  border: black solid 2px;
+  border-radius: 50px;
+  margin: 10vw;
+  cursor: default;
 }
 
-.aboutMe {
-  width: 100%;
+.beach-background {
+  background: url("./Components/assets/beach.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .aboutMe .about-title {
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: bold;
   color: #2f8dd0;
-  margin-bottom: 2vh;
+  margin-top: 2vh;
+  text-align: center;
 }
 
 .about-content {
   display: flex;
-  gap: 20px;
-  width: 100%;
-}
-
-.golf {
-  width: 500px;
-  height: auto;
-}
-
-.intro-container {
   flex-direction: column;
+  width: 100%;
+  margin: 3vh 20vh;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  background-color: #63a4d2;
+  border: black solid 1px;
+  border-radius: 30px;
+  margin-right: 35vh;
+  margin-bottom: 1vw;
+}
+
+.info:hover {
+  background-color: #428bbe;
+  cursor: pointer;
+}
+
+.info img {
+  width: 2vw;
+  height: 2vw;
+  padding: 2vh;
+  margin-right: 1vw;
+}
+
+.info-detail {
+  font-size: 1.3rem;
+}
+
+.info-detail a {
+  text-decoration: none;
+  color: black;
 }
 
 .aboutMe .introduction {
+  max-width: 1200px;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-top: 2vw;
+  margin-right: 18vw;
+  color: black;
 }
+
+strong {
+  color: #295ca8;
+}
+
+/*Skills*/
 
 .skills {
   display: flex;
-  background-color: #103359;
-  justify-content: center;
+  background-color: #ec976a;
   align-items: center;
-  margin-top: 30px;
   width: 100%;
+  height: 130vh;
+  flex-direction: column;
 }
 
-.skill-container {
-  font-size: 2rem;
-  color: #2f8dd0;
-  margin: 20px;
+.skill-title {
+  color: white;
+  font-size: 3rem;
+  margin-top: 5vh;
+}
+
+.skill-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-logo{
-  width: 120px;
-  height: 120px;
-  margin: 20px 40px;
+  width: 100px;
+  height: auto;
+  margin: 20px 30px;
+}
 
+.underline {
+  width: 80%;
+  border: 1px solid #888686;
+  position: relative;
+  top: 10px;
+  left: 2vw;
+  margin-bottom: 10px;
+}
+
+.skill-container {
+  font-size: 1.5rem;
+  width: 350px;
+  text-align: center;
+  border: black solid 1px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.skill-container h3 {
+  margin: 10px;
+}
+
+.languages {
+  position: relative;
+  top: 5vh;
+  left: 32vh;
+}
+
+.databases {
+  position: relative;
+  top: -11vh;
+  left: 40vh;
+}
+
+.web-development {
+  position: relative;
+  top: 25vh;
+  left: 1.5vh;
+}
+
+.web-development img {
+  width: 150px;
+  height: auto;
+}
+
+.backend-tech {
+  position: relative;
+  top: 43vh;
+  left: 9vh;
+}
+
+.backend-tech .skill-logo-jpa {
+  width: 150px;
+  height: auto;
+  margin: 20px 40px;
+}
+
+.devops {
+  position: relative;
+  top: -0.5vh;
+  left: -29vh;
+}
+
+.languages:hover {
+  animation: slide 1s forwards;
+}
+
+.databases:hover {
+  animation: slide 1s forwards;
+}
+
+.web-development:hover {
+  animation: slide 1s forwards;
+}
+
+.backend-tech:hover {
+  animation: slide 1s forwards;
+}
+
+.devops:hover {
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
 }
 
 /*Project-section*/
@@ -202,6 +352,7 @@ a:hover {
   background-color: #2f8dd0;
   border-radius: 10px;
   margin-bottom: 5vh;
+  height: 120vh;
 }
 
 .project-container .title {
@@ -231,28 +382,4 @@ a:hover {
 .project img {
   width: 50vh;
   height: 30vh;
-}
-
-/*Contact*/
-
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  background-color: grey;
-}
-
-.contact-container h2 {
-  color: white;
-  font-size: 3rem;
-  margin: 5vh;
-}
-
-.contact-information {
-  margin-left: 5vh;
-  margin-bottom: 5vh;
-}
-
-.contact-information p {
-  font-size: 2rem;
-  margin: 5px;
 }

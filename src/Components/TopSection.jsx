@@ -10,10 +10,10 @@ export default function Top() {
             </div>
             <div>
                 <ul className="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a className="top-nav" href="#home">Home</a></li>
+                    <li><a className="top-nav" href="#about-me">About</a></li>
+                    <li><a className="top-nav" href="#skills">Skills</a></li>
+                    <li><a className="top-nav" href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>

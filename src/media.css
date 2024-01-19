@@ -2,8 +2,7 @@
 
 .jeep-container {
   position: absolute;
-  top: 630px;
-  left: -10px;
+  left: 0;
 }
 
 .jeep {
@@ -20,7 +19,7 @@
 
 @keyframes first-half {
   0% {
-    transform: translateX(-0.2vw) rotate(-7deg);
+    transform: translateX(-0.3vw) rotate(-7deg);
   }
   20% {
     transform: translate(10vw, -0.8vw) rotate(-7deg);
@@ -53,24 +52,82 @@
     transform: translate(72vw, -3.3vw) rotate(10deg);
   }
   85% {
-    transform: translate(82vw, -1.3vw) rotate(15deg);
+    transform: translate(82vw, -0.3vw) rotate(13deg);
   }
   100% {
-    transform: translate(96vw, -0.2vw) rotate(-1deg);
+    transform: translate(96vw, 1.2vw) rotate(-1deg);
   }
 }
 
 #hello-message {
   cursor: pointer;
   position: absolute;
-  top: -9vw;
-  left: 49vw;
+  top: -11.5vw;
+  left: 48vw;
+  background-color: rgb(134,233,158);
+  border: #1a1a1a solid 6px;
+  border-radius: 50%;
 }
 
-.hello {
-  width: 3vw;
-  height: auto;
-  display: block;
+.message {
+  width: 7vw;
+  font-family: 'Righteous', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.message::before {
+  content: '';
+  position: absolute;
+  width: 2vw;
+  height: 2.7vw;
+  background-color: rgb(134,233,158);
+  box-shadow: 2vw 2vw 10px rgba(0, 0, 0, 0.5);
+  clip-path: polygon(80% 15%, 10% -5%, 0 50%);
+  top: 90%;
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+@media screen and (max-width: 2050px) {
+  .jeep-container {
+    top: 19vw;
+  }
+
+  .message {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .jeep-container {
+    top: 20vw;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .jeep-container {
+    top: 24.5vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .jeep-container {
+    top: 27.8vw;
+  }
 }
 
 /*Snowfall-animation*/
@@ -91,6 +148,6 @@
   }
 
   100% {
-    transform: translateY(100vh);
+    transform: translateY(70vh);
   }
 }

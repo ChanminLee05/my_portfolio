@@ -7,8 +7,8 @@ export default function Snow() {
             const snowflake = document.createElement('div');
             snowflake.className = 'snow';
             snowflake.style.left = `${getRandomNumber(5, window.innerWidth)}px`;
-            snowflake.style.top = `${getRandomNumber(0, window.innerHeight)}px`;
-            snowflake.style.animationDuration = `${getRandomNumber(5, 15)}s`;
+            snowflake.style.top = `${getRandomNumber(10, window.innerHeight)}px`;
+            snowflake.style.animationDuration = `${getRandomNumber(5, 10)}s`;
             document.body.appendChild(snowflake);
         };
 
