@@ -1,0 +1,55 @@
+/*Top-section*/
+
+#top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    /*background-color: #414141;*/
+    background-color: #676565;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5vw;
+}
+
+.nav-links .top-nav {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    transition: font-size 300ms ease;
+}
+
+.top-nav:hover {
+    color: lightgrey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: lightgrey;
+    font-size: 1.7vw;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 1.7vw;
+    color: white;
+    margin-right: 30vh;
+    justify-content: flex-start;
+}
+
+.title:hover {
+    cursor: default;
+}

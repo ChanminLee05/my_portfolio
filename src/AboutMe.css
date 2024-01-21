@@ -1,0 +1,70 @@
+/*About-me*/
+
+#about-me {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    border: black solid 2px;
+    border-radius: 50px;
+    margin: 10vw;
+    cursor: default;
+}
+
+.beach-background {
+    background: url("./Components/assets/beach.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.aboutMe .about-title {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #2f8dd0;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3vh 20vh;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    background-color: #63a4d2;
+    border: black solid 1px;
+    border-radius: 30px;
+    margin-right: 35vh;
+    margin-bottom: 1vw;
+}
+
+.info:hover {
+    background-color: #428bbe;
+    cursor: pointer;
+}
+
+.info img {
+    width: 2vw;
+    height: 2vw;
+    padding: 2vh;
+    margin-right: 1vw;
+}
+
+.info-detail {
+    font-size: 1.3rem;
+}
+
+.info-detail a {
+    text-decoration: none;
+    color: black;
+}
+
+.aboutMe .introduction {
+    max-width: 1200px;
+    font-size: 1.5rem;
+    margin-top: 2vw;
+    margin-right: 18vw;
+    color: black;
+}

@@ -1,6 +1,9 @@
-/*General*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("Top.css");
+@import url("Introduction.css");
+@import url("AboutMe.css");
+
+/*General*/
 
 * {
   margin: 0;
@@ -9,8 +12,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ecc95c;
-  transition: background-color 300ms ease;
+  /*background-color: #666685;*/
+  /*background-color: #a3a7e4;*/
+  /*background-color: #7c4789;*/
+  /*background-color: #ccf0c3;*/
+  /*transition: background-color 300ms ease;*/
 }
 
 html {
@@ -18,209 +24,9 @@ html {
 }
 
 p {
-  color: white;
+  /*color: black;*/
 }
 
-/*Transition*/
-
-a, .btn {
-  transition: all 300ms ease;
-}
-
-/*Top-section*/
-
-#top-section {
-  background: linear-gradient(to bottom, #000000, #0b0b0e);
-}
-
-nav, .nav-links {
-  display: flex;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5vw;
-}
-
-.nav-links .top-nav {
-  color: white;
-  text-decoration: none;
-  text-decoration-color: white;
-  transition: font-size 300ms ease;
-}
-
-.top-nav:hover {
-  color: lightgrey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: lightgrey;
-  font-size: 1.7vw;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 2vw;
-  height: 2vw;
-  margin-right: 20px;
-}
-
-.title {
-  font-size: 1.7vw;
-  color: white;
-  margin-right: 43vh;
-}
-
-.title:hover {
-  cursor: default;
-}
-
-/*Introduction*/
-
-#mid-section {
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  background: url("Components/assets/mountain.jpg") center no-repeat fixed;
-  background-size: 100% 100%;
-  cursor: default;
-}
-
-.greeting-container {
-  display: flex;
-  color: white;
-  margin: 40vh 20vh 20vh 30vh;
-  width: 100%;
-  height: 100%;
-}
-
-.greeting1 {
-  font-size: 2vw;
-  width: 70vh;
-}
-
-.greeting2 {
-  font-size: 4vw;
-  width: 70vh;
-}
-
-.greeting3 {
-  font-size: 1.5vw;
-  margin-top: 20px;
-  width: 70vh;
-}
-
-.greeting .logo {
-  margin-top: 50px;
-}
-
-.portrait {
-  margin: 5vh 10vh 40vh 30vh;
-}
-
-.picture{
-  width: 20vw;
-  max-width: 20vw;
-  height: 50%;
-  border-radius: 60%;
-}
-
-@media screen and (max-width: 1650px) {
-  .portrait {
-    margin: 0;
-  }
-
-  .picture {
-    max-width: 300px;
-    max-height: 300px;
-  }
-}
-/*About-me*/
-
-#about-me {
-  display: flex;
-  position: relative;
-  height: 100vh;
-  border: black solid 2px;
-  border-radius: 50px;
-  margin: 10vw;
-  cursor: default;
-}
-
-.beach-background {
-  background: url("./Components/assets/beach.jpg") center no-repeat;
-  background-size: cover;
-}
-
-.aboutMe .about-title {
-  font-size: 3vw;
-  font-weight: bold;
-  color: #2f8dd0;
-  margin-top: 2vh;
-  text-align: center;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 3vh 20vh;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  background-color: #63a4d2;
-  border: black solid 1px;
-  border-radius: 30px;
-  margin-right: 35vh;
-  margin-bottom: 1vw;
-}
-
-.info:hover {
-  background-color: #428bbe;
-  cursor: pointer;
-}
-
-.info img {
-  width: 2vw;
-  height: 2vw;
-  padding: 2vh;
-  margin-right: 1vw;
-}
-
-.info-detail {
-  font-size: 1.3rem;
-}
-
-.info-detail a {
-  text-decoration: none;
-  color: black;
-}
-
-.aboutMe .introduction {
-  max-width: 1200px;
-  font-size: 1.5rem;
-  margin-top: 2vw;
-  margin-right: 18vw;
-  color: black;
-}
-
-strong {
-  color: #295ca8;
-}
 
 /*Skills*/
 

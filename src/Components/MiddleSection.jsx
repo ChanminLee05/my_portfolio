@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import Jeep from "./Jeep";
-import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Snow from "./Snow";
+import Introduction from "./Introduction";
 
 export default function Middle() {
 
@@ -27,14 +27,10 @@ export default function Middle() {
 
     return (
         <div>
-            <section id="mid-section">
-                <Snow/>
-                <Jeep/>
-                <Introduction/>
-            </section>
-            <section id="about-me" className="beach-background">
-                <AboutMe/>
-            </section>
+            {/*<Snow/>*/}
+            <Introduction/>
+            {/*<Jeep/>*/}
+            <AboutMe/>
             <section id="skills">
                 <Skills/>
             </section>

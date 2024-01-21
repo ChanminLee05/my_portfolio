@@ -3,6 +3,7 @@
 .jeep-container {
   position: absolute;
   left: 0;
+  pointer-events: none;
 }
 
 .jeep {
@@ -67,6 +68,7 @@
   background-color: rgb(134,233,158);
   border: #1a1a1a solid 6px;
   border-radius: 50%;
+  pointer-events: auto;
 }
 
 .message {

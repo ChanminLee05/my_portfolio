@@ -9,7 +9,7 @@ import file from './assets/Chanmin Lee - Resume.pdf'
 export default function AboutMe() {
 
     return (
-        <div className="aboutMe">
+        <div id="about-me">
             <p className="about-title">ABOUT ME</p>
             <div className="about-content">
                 <div className="about-info">
@@ -58,12 +58,10 @@ export default function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <div className="intro-container">
-                    <p className="introduction">As a <strong>junior developer</strong>, I specialize in both <strong>front-end and back-end technologies</strong>.
-                        My hands-on approach to learning has equipped me to create efficient, user-friendly solutions.
-                        I am driven by a commitment to <strong>continuous improvement</strong>, staying current with industry trends, and evolving my skills to <strong>contribute effectively</strong> to organizational success.
-                    </p>
-                </div>
+                <p className="greeting3">I specialize in both <strong>Frontend and Backend technologies</strong>.
+                     My hands-on approach to learning has equipped me to create efficient, user-friendly solutions.
+                     I am driven by a commitment to <strong>continuous improvement</strong>, staying current with industry trends, and evolving my skills to <strong>contribute effectively</strong> to organizational success.
+                 </p>
             </div>
         </div>
     )
