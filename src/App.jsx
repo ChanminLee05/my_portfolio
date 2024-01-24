@@ -1,12 +1,11 @@
 import './App.css';
-import Top from "./Components/TopSection";
-import Middle from "./Components/MiddleSection";
+import IntroSection from "./Components/IntroSection";
 
 export default function App() {
   return (
       <div>
-        <Top/>
-        <Middle/>
+        {/*<Top/>*/}
+        <IntroSection/>
 
       </div>
   );

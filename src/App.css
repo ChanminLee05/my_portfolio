@@ -12,19 +12,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  /*background-color: #666685;*/
-  /*background-color: #a3a7e4;*/
-  /*background-color: #7c4789;*/
-  /*background-color: #ccf0c3;*/
-  /*transition: background-color 300ms ease;*/
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-p {
-  /*color: black;*/
 }
 
 

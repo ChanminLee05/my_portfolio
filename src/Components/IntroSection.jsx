@@ -8,23 +8,6 @@ import Introduction from "./Introduction";
 
 export default function Middle() {
 
-    useEffect(() => {
-        const aboutMeSection = document.getElementById("about-me");
-
-        window.addEventListener('scroll', function () {
-            const value = window.scrollY;
-            if (value > 500 && value < 1900) {
-                aboutMeSection.classList.add('beach-background');
-            } else {
-                aboutMeSection.classList.remove('beach-background');
-            }
-        });
-
-        return () => {
-            window.removeEventListener('scroll', () => {});
-        };
-    }, []);
-
     return (
         <div>
             {/*<Snow/>*/}

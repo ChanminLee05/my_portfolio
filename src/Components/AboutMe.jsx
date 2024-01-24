@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import profile from './assets/profile.png'
 import email from './assets/email.png'
 import phone from './assets/phone.png'
@@ -7,10 +7,28 @@ import resume from './assets/resume.png'
 import file from './assets/Chanmin Lee - Resume.pdf'
 
 export default function AboutMe() {
+    useEffect(() => {
+        const titleEffect = document.getElementById("title");
+
+        window.addEventListener('scroll', function () {
+            const value = window.scrollY;
+            if (value > 300 && value < 1900) {
+                titleEffect.style.animation = 'sliding-in 1s ease-in forwards';
+            } else {
+                titleEffect.style.animation = 'sliding-out 1s ease-in forwards';
+            }
+        });
+
+        return () => {
+            window.removeEventListener('scroll', () => {});
+        };
+    }, []);
 
     return (
         <div id="about-me">
-            <p className="about-title">ABOUT ME</p>
+            <div className="about-title">
+                <p id="title">ABOUT ME</p>
+            </div>
             <div className="about-content">
                 <div className="about-info">
                     <div className="info">
@@ -58,10 +76,13 @@ export default function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <p className="greeting3">I specialize in both <strong>Frontend and Backend technologies</strong>.
-                     My hands-on approach to learning has equipped me to create efficient, user-friendly solutions.
-                     I am driven by a commitment to <strong>continuous improvement</strong>, staying current with industry trends, and evolving my skills to <strong>contribute effectively</strong> to organizational success.
-                 </p>
+                <div className="greeting-container">
+                    <p className="greeting">I specialize in both <strong>Frontend and Backend technologies</strong>.
+                        My hands-on approach to learning has equipped me to create efficient, user-friendly solutions.
+                        I am driven by a commitment to <strong>continuous improvement</strong>, staying current with industry trends, and evolving my skills to <strong>contribute effectively</strong> to organizational success.
+                    </p>
+                </div>
+
             </div>
         </div>
     )
